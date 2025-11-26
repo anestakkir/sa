@@ -1,0 +1,82 @@
+/* src/styles/colors.scss */
+
+:root {
+  /* === ВАЖНЫЕ ПЕРЕМЕННЫЕ ДЛЯ КОМПОНЕНТОВ === */
+  /* Используются в UiButton, UiInput, Calculator */
+
+  --color-bg-primary: #ffffff;
+  --color-text-primary: #333333;
+  --color-bg-form: #f8fafc;
+  --color-border: #cbd5e1;
+
+  /* Основной цвет кнопки (синий/индиго) */
+  --color-accent: #4f46e5;
+  --color-accent-hover: #4338ca;
+
+  /* Вторичный цвет */
+  --color-secondary: #64748b;
+  --color-secondary-hover: #475569;
+
+  /* Цвет отключенной кнопки (чтобы её было видно!) */
+  --color-disabled: #94a3b8;
+
+  /* Ошибки и результаты */
+  --color-error: #ef4444;
+  --color-result-bg: #e0f2fe;
+  --color-result-border: #3b82f6;
+
+  /* === ТВОИ ПЕРЕМЕННЫЕ (для совместимости) === */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-primary: #006cbb;
+}
+
+/* === ГЛОБАЛЬНЫЕ СТИЛИ (Твой код) === */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Добавил дефолтный шрифт, пока твои файлы fonts не загрузились */
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #f0f2f5;
+  /* Светло-серый фон для всей страницы */
+  color: var(--color-text-primary);
+}
+
+a {
+  width: fit-content;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Стилизация скроллбара (для красоты) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
