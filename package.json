@@ -1,10 +1,19 @@
 {
-  "name": "sa",
-  "description": "SA",
-  "version": "0.0.0",
-  "type": "module",
+  "name": "podseti-ui-anesta",
   "private": false,
-  "sideEffects": false,
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/anesta-ui.umd.cjs",
+  "module": "./dist/anesta-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/anesta-ui.js",
+      "require": "./dist/anesta-ui.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -45,7 +45,7 @@ function handleSubmit() {
     
     <form @submit.prevent="handleSubmit" class="calculator-form">
       
-      <!-- Используем UiField + UiInput -->
+     
       <UiField label="IP-адрес">
         <UiInput
           v-model="ip"
@@ -53,7 +53,7 @@ function handleSubmit() {
         />
       </UiField>
 
-      <!-- Используем UiField + UiSelect -->
+     
       <UiField label="Маска подсети">
         <UiSelect
           v-model="selectedMask"
@@ -61,7 +61,7 @@ function handleSubmit() {
         />
       </UiField>
 
-      <!-- Используем UiButton -->
+      
       <div class="form-actions">
         <UiButton
           type="submit"

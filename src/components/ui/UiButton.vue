@@ -13,7 +13,7 @@ const props = withDefaults(defineProps<IProps>(), {
   type: 'button',
 });
 
-// Используем data-variant для стилизации, как в задании
+
 </script>
 
 <template>
@@ -45,7 +45,7 @@ const props = withDefaults(defineProps<IProps>(), {
   opacity: 0.7;
 }
 
-/* Варианты через data-атрибуты */
+
 .ui-button[data-variant='primary'] {
   background-color: var(--color-accent);
 }

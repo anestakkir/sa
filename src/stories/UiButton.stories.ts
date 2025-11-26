@@ -18,7 +18,7 @@ type Story = StoryObj<typeof UiButton>;
 export const Primary: Story = {
     args: {
         layout: 'primary',
-        default: 'Кнопка Primary', // Это попадет в слот
+        default: 'Кнопка Primary',
     },
 };
 

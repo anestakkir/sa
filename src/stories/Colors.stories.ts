@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/vue3';
 
-// Этот "компонент" просто покажет наши цвета
+
 const meta: Meta = {
-    title: 'Docs/Colors',
-    parameters: {
-        layout: 'centered',
-    },
+  title: 'Docs/Colors',
+  parameters: {
+    layout: 'centered',
+  },
 };
 
 export default meta;
 
 export const Palette: StoryObj = {
-    render: () => ({
-        template: `
+  render: () => ({
+    template: `
       <div style="font-family: sans-serif; min-width: 600px;">
         <h1 style="margin-bottom: 24px;">Color Palette</h1>
         <p style="color: #666; margin-bottom: 32px;">
@@ -77,5 +77,5 @@ export const Palette: StoryObj = {
         </div>
       </div>
     `,
-    }),
+  }),
 };
